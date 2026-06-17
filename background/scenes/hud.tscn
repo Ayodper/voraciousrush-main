@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bt3kdpgtsobsw"]
+
+[node name="hud" type="CanvasLayer" unique_id=1170489713]
+
+[node name="scorelabel" type="Label" parent="." unique_id=1390674064]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 40
+text = "SCORE:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="startlabel" type="Label" parent="." unique_id=572429251]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -25.5
+offset_top = -11.5
+offset_right = 25.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 40
+text = "PRESS SPACE TO PLAY"
+
+[node name="highscorelabel" type="Label" parent="." unique_id=627642159]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -100.0
+offset_bottom = 23.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 40
+text = "HIGH SCORE:"

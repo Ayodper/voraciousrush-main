@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cxyr8cgonguax"]
+
+[ext_resource type="Texture2D" uid="uid://c2ksotcd7wyxw" path="res://icon.svg" id="1_1tfqh"]
+[ext_resource type="Script" uid="uid://b5n3jxbbj7jgf" path="res://background/scenes/chicken_leg.gd" id="1_kiqq3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kiqq3"]
+size = Vector2(96, 96)
+
+[node name="chicken leg" type="Area2D" unique_id=1673576260]
+script = ExtResource("1_kiqq3")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1553301838]
+position = Vector2(-8.077936e-28, -64)
+scale = Vector2(0.74999994, 0.74999994)
+texture = ExtResource("1_1tfqh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=645349266]
+position = Vector2(0, -64)
+shape = SubResource("RectangleShape2D_kiqq3")

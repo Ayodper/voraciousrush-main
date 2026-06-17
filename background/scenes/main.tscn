@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://by677s85xetu7"]
+
+[ext_resource type="Script" uid="uid://da8tbx1vn7sla" path="res://background/scenes/main.gd" id="1_vi4oe"]
+[ext_resource type="PackedScene" uid="uid://di8d0fa5f1hpq" path="res://background/scenes/bg.tscn" id="1_wg5rf"]
+[ext_resource type="PackedScene" uid="uid://c3shuys34hddw" path="res://background/scenes/ground.tscn" id="2_vi4oe"]
+[ext_resource type="PackedScene" uid="uid://by2tsgo28oxb6" path="res://background/scenes/duck_animated.tscn" id="3_ygcqq"]
+[ext_resource type="PackedScene" uid="uid://bt3kdpgtsobsw" path="res://background/scenes/hud.tscn" id="5_ygcqq"]
+
+[node name="main" type="Node" unique_id=462014051]
+script = ExtResource("1_vi4oe")
+
+[node name="bg" parent="." unique_id=534829721 instance=ExtResource("1_wg5rf")]
+
+[node name="ground" parent="." unique_id=1686875652 instance=ExtResource("2_vi4oe")]
+position = Vector2(0, 16)
+
+[node name="duck" parent="." unique_id=738500252 instance=ExtResource("3_ygcqq")]
+position = Vector2(135, 438)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1846494953]
+position = Vector2(576, 330)
+
+[node name="hud" parent="." unique_id=1170489713 instance=ExtResource("5_ygcqq")]
