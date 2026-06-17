@@ -9,9 +9,9 @@ size = Vector2(96, 96)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=188659122]
 texture_filter = 1
-position = Vector2(0, 24)
+position = Vector2(0, 512)
 texture = ExtResource("1_jl7yn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1056322940]
-position = Vector2(0, 24)
+position = Vector2(0, 512)
 shape = SubResource("RectangleShape2D_mhaxx")
