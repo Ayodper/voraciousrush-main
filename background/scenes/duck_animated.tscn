@@ -125,7 +125,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7i74v"]
-size = Vector2(10, 24.5)
+size = Vector2(10, 17.875)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mirn6"]
 size = Vector2(15.625, 8.625)
@@ -137,12 +137,14 @@ script = ExtResource("1_7i74v")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=179031153]
 texture_filter = 1
+position = Vector2(-1, 4)
+scale = Vector2(0.7016129, 0.734375)
 sprite_frames = SubResource("SpriteFrames_16dmo")
 animation = &"duck"
 autoplay = "idle"
 
 [node name="runcol" type="CollisionShape2D" parent="." unique_id=42035398]
-position = Vector2(-0.25, 3.625)
+position = Vector2(-0.25, 6.9375)
 shape = SubResource("RectangleShape2D_7i74v")
 
 [node name="duckcol" type="CollisionShape2D" parent="." unique_id=252540125]
