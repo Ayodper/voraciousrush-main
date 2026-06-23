@@ -1,17 +1,17 @@
 [gd_scene format=3 uid="uid://cg6pr73664sq"]
 
-[ext_resource type="Texture2D" uid="uid://c2ksotcd7wyxw" path="res://icon.svg" id="1_jl7yn"]
+[ext_resource type="Texture2D" uid="uid://t67ovofl2r7u" path="res://keyframes/long_wood_spike.png" id="1_jl7yn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mhaxx"]
-size = Vector2(96, 96)
+size = Vector2(11, 158)
 
 [node name="rock" type="Area2D" unique_id=1285467338]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=188659122]
 texture_filter = 1
-position = Vector2(0, 512)
+position = Vector2(0, 544)
 texture = ExtResource("1_jl7yn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1056322940]
-position = Vector2(0, 512)
+position = Vector2(-0.5, 559)
 shape = SubResource("RectangleShape2D_mhaxx")
