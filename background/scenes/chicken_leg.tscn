@@ -1,7 +1,43 @@
 [gd_scene format=3 uid="uid://cxyr8cgonguax"]
 
-[ext_resource type="Texture2D" uid="uid://c2ksotcd7wyxw" path="res://icon.svg" id="1_1tfqh"]
 [ext_resource type="Script" uid="uid://b5n3jxbbj7jgf" path="res://background/scenes/chicken_leg.gd" id="1_kiqq3"]
+[ext_resource type="Texture2D" uid="uid://dvibnk770ey8i" path="res://New Piskel.png" id="2_kiqq3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kiqq3"]
+atlas = ExtResource("2_kiqq3")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7yl1e"]
+atlas = ExtResource("2_kiqq3")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjylj"]
+atlas = ExtResource("2_kiqq3")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_slqn2"]
+atlas = ExtResource("2_kiqq3")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_46x1t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kiqq3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7yl1e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vjylj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_slqn2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kiqq3"]
 size = Vector2(96, 96)
@@ -9,11 +45,14 @@ size = Vector2(96, 96)
 [node name="chicken leg" type="Area2D" unique_id=1673576260]
 script = ExtResource("1_kiqq3")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1553301838]
-position = Vector2(-8.077936e-28, -64)
-scale = Vector2(0.74999994, 0.74999994)
-texture = ExtResource("1_1tfqh")
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=1746920765]
+texture_filter = 1
+position = Vector2(-0.99999714, -14.749997)
+scale = Vector2(3.0625, 2.9218748)
+sprite_frames = SubResource("SpriteFrames_46x1t")
+frame = 1
+frame_progress = 0.047709968
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=645349266]
-position = Vector2(0, -64)
+position = Vector2(0, -13)
 shape = SubResource("RectangleShape2D_kiqq3")

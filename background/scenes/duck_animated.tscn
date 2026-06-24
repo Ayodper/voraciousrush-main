@@ -128,7 +128,7 @@ animations = [{
 size = Vector2(10, 17.875)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mirn6"]
-size = Vector2(15.625, 8.625)
+size = Vector2(9, 8)
 
 [node name="duck" type="CharacterBody2D" unique_id=738500252]
 z_index = 1
@@ -148,7 +148,7 @@ position = Vector2(-0.25, 6.9375)
 shape = SubResource("RectangleShape2D_7i74v")
 
 [node name="duckcol" type="CollisionShape2D" parent="." unique_id=252540125]
-position = Vector2(-2.8125, 11.6875)
+position = Vector2(-3.5, 11)
 shape = SubResource("RectangleShape2D_mirn6")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1043062519]
