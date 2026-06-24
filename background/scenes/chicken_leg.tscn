@@ -40,19 +40,19 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kiqq3"]
-size = Vector2(96, 96)
+size = Vector2(76, 69.5)
 
 [node name="chicken leg" type="Area2D" unique_id=1673576260]
 script = ExtResource("1_kiqq3")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=1746920765]
 texture_filter = 1
-position = Vector2(-0.99999714, -14.749997)
-scale = Vector2(3.0625, 2.9218748)
+position = Vector2(32, -48)
+scale = Vector2(5.0625, 4.966981)
 sprite_frames = SubResource("SpriteFrames_46x1t")
 frame = 1
 frame_progress = 0.047709968
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=645349266]
-position = Vector2(0, -13)
+position = Vector2(2, -18.75)
 shape = SubResource("RectangleShape2D_kiqq3")
