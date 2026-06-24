@@ -47,12 +47,12 @@ script = ExtResource("1_kiqq3")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=1746920765]
 texture_filter = 1
-position = Vector2(32, -48)
+position = Vector2(32, -32)
 scale = Vector2(5.0625, 4.966981)
 sprite_frames = SubResource("SpriteFrames_46x1t")
 frame = 1
 frame_progress = 0.047709968
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=645349266]
-position = Vector2(2, -18.75)
+position = Vector2(8, 0)
 shape = SubResource("RectangleShape2D_kiqq3")
