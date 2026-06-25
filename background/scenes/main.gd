@@ -25,7 +25,7 @@ var score : int = 0
 var speed : float = 0.0
 const SCORE_MODIFIER : int = 10
 const START_SPEED : float = 10.0
-const MAX_SPEED : int = 25
+const MAX_SPEED : int = 251
 const SPEED_MODIFIER : int = 5000
 var ground_height : float
 var game_running : bool = false

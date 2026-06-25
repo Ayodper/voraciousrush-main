@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c3shuys34hddw"]
 
-[ext_resource type="Texture2D" uid="uid://c2ksotcd7wyxw" path="res://icon.svg" id="1_452m3"]
+[ext_resource type="Texture2D" uid="uid://bw4ueb82cb1ox" path="res://Ground for Voracious rush.png" id="1_452m3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hr7ob"]
 size = Vector2(2304, 96)
@@ -9,8 +9,8 @@ size = Vector2(2304, 96)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1841549003]
 texture_filter = 1
-position = Vector2(-303, 549)
-scale = Vector2(21.835936, 0.71093756)
+position = Vector2(-44.999996, 552)
+scale = Vector2(76.15625, 2.9999993)
 texture = ExtResource("1_452m3")
 centered = false
 
