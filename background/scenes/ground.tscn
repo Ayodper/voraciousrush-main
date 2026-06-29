@@ -9,8 +9,8 @@ size = Vector2(2304, 96)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1841549003]
 texture_filter = 1
-position = Vector2(-44.999996, 552)
-scale = Vector2(76.15625, 3.2499998)
+position = Vector2(-27, 552)
+scale = Vector2(73.96875, 3.2499998)
 texture = ExtResource("1_452m3")
 centered = false
 
