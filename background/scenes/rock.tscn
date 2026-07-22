@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://t67ovofl2r7u" path="res://keyframes/long_wood_spike.png" id="1_jl7yn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mhaxx"]
-size = Vector2(11, 157)
+size = Vector2(15, 157)
 
 [node name="rock" type="Area2D" unique_id=1285467338]
 
