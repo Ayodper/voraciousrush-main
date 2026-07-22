@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cgi34klm5eufo"]
+
+[node name="Node" type="Node" unique_id=412654781]
+
+[node name="Button" type="Button" parent="." unique_id=777615596]
+anchors_preset = -1
+anchor_left = 0.38900003
+anchor_top = 0.38300002
+anchor_right = 0.38900003
+anchor_bottom = 0.38300002
+offset_left = -0.12802124
+offset_top = -0.18400574
+offset_right = 217.87198
+offset_bottom = 90.815994
+theme_override_font_sizes/font_size = 60
+text = "RESTART"
