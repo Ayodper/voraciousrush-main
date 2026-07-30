@@ -49,6 +49,11 @@ func new_game():
 	get_tree().paused = false
 	show_score()
 	difficulty = 0
+	
+	#delete all obstacles
+	for obs in obstacles:
+		obs.queue.free()
+	obstacles.clear()
 
 	$duck.position = DUCK_START_POS
 	$duck.velocity = Vector2i(0, 0)
