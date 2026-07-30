@@ -52,7 +52,7 @@ func new_game():
 	
 	#delete all obstacles
 	for obs in obstacles:
-		obs.queue.free()
+		obs.queue_free()
 	obstacles.clear()
 
 	$duck.position = DUCK_START_POS
