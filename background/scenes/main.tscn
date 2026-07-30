@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://c3shuys34hddw" path="res://background/scenes/ground.tscn" id="2_vi4oe"]
 [ext_resource type="PackedScene" uid="uid://by2tsgo28oxb6" path="res://background/scenes/duck_animated.tscn" id="3_ygcqq"]
 [ext_resource type="PackedScene" uid="uid://bt3kdpgtsobsw" path="res://background/scenes/hud.tscn" id="5_ygcqq"]
+[ext_resource type="PackedScene" uid="uid://cgi34klm5eufo" path="res://scenes/restartscreen.tscn" id="6_3pwa4"]
 
 [node name="main" type="Node" unique_id=462014051]
 script = ExtResource("1_vi4oe")
@@ -21,3 +22,5 @@ position = Vector2(135, 438)
 position = Vector2(576, 330)
 
 [node name="hud" parent="." unique_id=1170489713 instance=ExtResource("5_ygcqq")]
+
+[node name="restart" parent="." unique_id=412654781 instance=ExtResource("6_3pwa4")]

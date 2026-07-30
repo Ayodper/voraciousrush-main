@@ -39,13 +39,14 @@ func _ready() -> void:
 	# FIXED: calculate true ground bottom Y
 	var ground_sprite = $ground.get_node("Sprite2D")
 	ground_height = $ground.position.y + (ground_sprite.texture.get_height() * ground_sprite.scale.y / 2)
-
+	$restart.get_node("Button").pressed.connect(new_game)
 	new_game()
 
 
 func new_game():
 	score = 0
 	game_running = false
+	get_tree().paused = false
 	show_score()
 	difficulty = 0
 
@@ -53,6 +54,12 @@ func new_game():
 	$duck.velocity = Vector2i(0, 0)
 	$Camera2D.position = CAM_START_POS
 	$ground.position = Vector2i(0, 0)
+	
+	
+	#hud position reset and game over srceen
+	$hud.get_node("startlabel").show()
+	$restart.hide()
+	
 
 	$hud/startlabel.show()
 	$hud/scorelabel.show()
@@ -141,3 +148,4 @@ func adjust_difficulty():
 func game_over():
 	get_tree().paused = true
 	game_running = false
+	$restart.show()

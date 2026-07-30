@@ -40,7 +40,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kiqq3"]
-size = Vector2(76, 69.5)
+size = Vector2(40, 40)
 
 [node name="chicken leg" type="Area2D" unique_id=1673576260]
 script = ExtResource("1_kiqq3")
@@ -54,5 +54,5 @@ frame = 1
 frame_progress = 0.047709968
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=645349266]
-position = Vector2(8, 0)
+position = Vector2(4, 4)
 shape = SubResource("RectangleShape2D_kiqq3")

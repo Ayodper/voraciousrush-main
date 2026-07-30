@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://cgi34klm5eufo"]
 
-[node name="Node" type="Node" unique_id=412654781]
+[node name="Node" type="CanvasLayer" unique_id=1450652546]
 
 [node name="Button" type="Button" parent="." unique_id=777615596]
+process_mode = 2
 anchors_preset = -1
 anchor_left = 0.38900003
 anchor_top = 0.38300002
