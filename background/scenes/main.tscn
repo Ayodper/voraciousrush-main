@@ -16,7 +16,7 @@ script = ExtResource("1_vi4oe")
 position = Vector2(0, 16)
 
 [node name="duck" parent="." unique_id=738500252 instance=ExtResource("3_ygcqq")]
-position = Vector2(135, 438)
+position = Vector2(145, 442)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1846494953]
 position = Vector2(576, 330)

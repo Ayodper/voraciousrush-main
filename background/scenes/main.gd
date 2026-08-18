@@ -9,6 +9,7 @@ var barrel_scene = preload("res://background/scenes/barrel.tscn")
 var obstacle_types := [stump_scene, rock_scene, barrel_scene]
 var obstacles : Array = []
 var chicken_heights := [200, 390]
+var high_score : int = 0   # ensure initialized
 
 # FIXED INTERNAL RESOLUTION (prevents distortion)
 const GAME_WIDTH := 1280
@@ -36,7 +37,6 @@ var screen_size : Vector2
 func _ready() -> void:
 	screen_size = Vector2(GAME_WIDTH, GAME_HEIGHT)
 
-	# FIXED: calculate true ground bottom Y
 	var ground_sprite = $ground.get_node("Sprite2D")
 	ground_height = $ground.position.y + (ground_sprite.texture.get_height() * ground_sprite.scale.y / 2)
 	$restart.get_node("Button").pressed.connect(new_game)
@@ -48,9 +48,10 @@ func new_game():
 	game_running = false
 	get_tree().paused = false
 	show_score()
+	show_high_score()   # NEW
+
 	difficulty = 0
 	
-	#delete all obstacles
 	for obs in obstacles:
 		obs.queue_free()
 	obstacles.clear()
@@ -60,12 +61,9 @@ func new_game():
 	$Camera2D.position = CAM_START_POS
 	$ground.position = Vector2i(0, 0)
 	
-	
-	#hud position reset and game over srceen
 	$hud.get_node("startlabel").show()
 	$restart.hide()
 	
-
 	$hud/startlabel.show()
 	$hud/scorelabel.show()
 
@@ -109,8 +107,6 @@ func generate_obs():
 			var obs_scale = obs.get_node("Sprite2D").scale
 
 			var obs_x : int = screen_size.x + score + 100 + (i * 100)
-
-			# FIXED: place obstacle exactly on the ground
 			var obs_y : float = ground_height - (obs_height * obs_scale.y / 2)
 
 			last_obs = obs
@@ -144,6 +140,16 @@ func show_score():
 	$hud/scorelabel.text = "SCORE: " + str(score / SCORE_MODIFIER)
 
 
+# NEW — display high score
+func show_high_score():
+	$hud/highscorelabel.text = "HIGH SCORE: " + str(high_score / SCORE_MODIFIER)
+
+
+func check_high_score():
+	if score > high_score:
+		high_score = score
+
+
 func adjust_difficulty():
 	difficulty = score / SPEED_MODIFIER
 	if difficulty > MAX_DIFFCULTY:
@@ -151,6 +157,8 @@ func adjust_difficulty():
 
 
 func game_over():
+	check_high_score()
+	show_high_score()   # NEW
 	get_tree().paused = true
 	game_running = false
 	$restart.show()
