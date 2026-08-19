@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bt3kdpgtsobsw" path="res://background/scenes/hud.tscn" id="5_ygcqq"]
 [ext_resource type="PackedScene" uid="uid://cgi34klm5eufo" path="res://scenes/restartscreen.tscn" id="6_3pwa4"]
 [ext_resource type="AudioStream" uid="uid://d3puwvlhabdsq" path="res://Audio/tatamusic-gaming-game-video-game-music-550079.mp3" id="7_enlpv"]
+[ext_resource type="AudioStream" uid="uid://v1kn51eldh8l" path="res://Audio/dragon-studio-cartoon-jump-463196.mp3" id="8_jm0w6"]
 
 [node name="main" type="Node" unique_id=462014051]
 script = ExtResource("1_vi4oe")
@@ -29,4 +30,8 @@ position = Vector2(576, 330)
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1969812522]
 stream = ExtResource("7_enlpv")
 volume_db = 3.573
+autoplay = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1464047486]
+stream = ExtResource("8_jm0w6")
 autoplay = true
