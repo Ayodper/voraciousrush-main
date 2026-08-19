@@ -68,7 +68,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_0aqq3")
 }],
-"loop": true,
+"loop": 1,
 "name": &"duck",
 "speed": 5.0
 }, {
@@ -79,7 +79,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_lyw7n")
 }],
-"loop": true,
+"loop": 1,
 "name": &"idle",
 "speed": 7.0
 }, {
@@ -96,7 +96,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_2p1wy")
 }],
-"loop": true,
+"loop": 1,
 "name": &"jump",
 "speed": 10.0
 }, {
@@ -119,13 +119,13 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_j1qxb")
 }],
-"loop": true,
+"loop": 1,
 "name": &"run",
 "speed": 15.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7i74v"]
-size = Vector2(10, 17.875)
+size = Vector2(9.25, 16.875)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mirn6"]
 size = Vector2(9, 8)
@@ -137,8 +137,8 @@ script = ExtResource("1_7i74v")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=179031153]
 texture_filter = 1
-position = Vector2(-1, 4)
-scale = Vector2(0.7016129, 0.734375)
+position = Vector2(-2.4374998, 5.5531616)
+scale = Vector2(0.608871, 0.6373024)
 sprite_frames = SubResource("SpriteFrames_16dmo")
 animation = &"duck"
 autoplay = "idle"
@@ -146,7 +146,7 @@ frame = 1
 frame_progress = 0.26216188
 
 [node name="runcol" type="CollisionShape2D" parent="." unique_id=42035398]
-position = Vector2(-0.25, 6.9375)
+position = Vector2(-0.625, 7.4375)
 shape = SubResource("RectangleShape2D_7i74v")
 
 [node name="duckcol" type="CollisionShape2D" parent="." unique_id=252540125]
