@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cqhpuats212dt" path="res://2d game obstacles and textures/Wooden Spike.png" id="1_jl7yn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mhaxx"]
-size = Vector2(15, 157)
+size = Vector2(15, 168)
 
 [node name="rock" type="Area2D" unique_id=1285467338]
 
@@ -14,5 +14,5 @@ scale = Vector2(5.6944447, 11.291666)
 texture = ExtResource("1_jl7yn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1056322940]
-position = Vector2(-0.5, 559.5)
+position = Vector2(1, 554)
 shape = SubResource("RectangleShape2D_mhaxx")
